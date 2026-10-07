@@ -217,16 +217,19 @@
           <div class="project-meta">Physical control project</div>
           <h3>IMU feedback control of a BLDC test rig</h3>
           <p>
-            Implemented closed-loop angle control on a physical BLDC test rig using IMU feedback,
-            state estimation and a PID controller.
+            Built a closed-loop angle-control system on a physical BLDC test rig using an ESP32,
+            IMU feedback, Kalman-filtered angle estimation and PID control. The controller supports
+            multiple angle setpoints and continuously adjusts motor output based on the measured
+            angular error.
           </p>
           <ul>
-            <li>ESC commands via DShot</li>
-            <li>IMU sensor fusion with Kalman filtering</li>
-            <li>Tracking tests across multiple reference angles</li>
+            <li>Closed feedback loop using IMU-based angle measurements</li>
+            <li>ESP32-based controller with ESC commands sent using the DShot protocol</li>
+            <li>Kalman filtering for angle estimation and noise reduction</li>
+            <li>Tracking tests across multiple commanded angle setpoints</li>
           </ul>
           <div class="tags">
-            <span>BLDC</span><span>IMU</span><span>Kalman filter</span><span>DShot</span>
+            <span>ESP32</span><span>BLDC</span><span>IMU</span><span>Kalman filter</span><span>PID</span><span>DShot</span>
           </div>
         </div>
       </article>
