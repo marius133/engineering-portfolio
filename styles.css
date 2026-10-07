@@ -299,13 +299,52 @@ h1 {
   color: var(--muted);
 }
 
+.study-group + .study-group {
+  margin-top: 34px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.study-group-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.study-index {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--accent);
+  font: 700 .72rem/1 "Space Grotesk", sans-serif;
+  background: rgba(105,184,255,.05);
+}
+
+.study-group-heading h4 {
+  margin: 0 0 4px;
+  font: 600 1.15rem/1.2 "Space Grotesk", "Inter", sans-serif;
+  letter-spacing: -.02em;
+}
+
+.study-group-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
 .study-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 22px;
 }
 
-.study-card {
+.study-card,
+.wide-study-card {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -323,15 +362,37 @@ h1 {
   padding: 22px;
 }
 
-.study-copy h4 {
+.study-copy h4,
+.wide-study-copy h4 {
   margin: 0 0 10px;
   font: 600 1.25rem/1.15 "Space Grotesk", "Inter", sans-serif;
   letter-spacing: -.02em;
 }
 
-.study-copy p {
+.study-copy p,
+.wide-study-copy p {
   margin: 0;
   color: #b7c4d0;
+}
+
+.wide-study-card {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: stretch;
+}
+
+.wide-study-media {
+  border: 0;
+  border-right: 1px solid var(--line);
+  border-radius: 0;
+  aspect-ratio: 16/9;
+}
+
+.wide-study-copy {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .compact-grid {
@@ -392,8 +453,13 @@ footer a:hover { color: var(--text); }
 
   .project:nth-of-type(odd) .project-media { order: initial; }
   .control-studies-heading,
-  .study-grid { grid-template-columns: 1fr; }
+  .study-grid,
+  .wide-study-card { grid-template-columns: 1fr; }
   .control-studies-heading { gap: 16px; }
+  .wide-study-media {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
   .compact-grid { grid-template-columns: 1fr; }
   .about { gap: 32px; }
   nav { gap: 16px; }
