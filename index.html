@@ -163,9 +163,12 @@
               <div class="project-meta">Simulation study · Slope control</div>
               <h4>Rotor-assisted slope control</h4>
               <p>
-                A slope-relative controller uses rotor thrust to lift and unload the rear of the
-                vehicle, supporting forward motion on steep inclines when wheel traction alone
-                is insufficient.
+                Two distance sensors mounted a known distance apart measure the distance from the
+                robot to the slope independently. The difference between the two measurements is
+                used together with the known sensor spacing to estimate the robot's angle relative
+                to the slope. This relative-angle estimate is fed back to the controller, which
+                regulates rotor assistance and vehicle attitude to maintain or increase useful
+                wheel loading and improve traction on steep inclines.
               </p>
             </div>
           </article>
