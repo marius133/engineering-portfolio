@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Marius Halaas — Mechatronics MSc student and Research Assistant. Robotics, control systems, simulation and reinforcement learning." />
+  <title>Marius Halaas | Robotics & Control</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#top">MH</a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/marius133" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">MECHATRONICS · ROBOTICS · CONTROL</p>
+        <h1>Marius Halaas</h1>
+        <p class="hero-lead">
+          MSc student and Research Assistant at the University of Agder,
+          working with robotics, control systems, simulation and reinforcement learning.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="https://github.com/marius133" target="_blank" rel="noreferrer">GitHub profile</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="status-row">
+          <span class="status-dot"></span>
+          <span>Current focus</span>
+        </div>
+        <h2>Reinforcement learning & path planning</h2>
+        <p>
+          Developing PPO-based control for coordinated rotor and DC-motor actuation,
+          with the long-term goal of a physically validated digital twin.
+        </p>
+        <div class="tags">
+          <span>Isaac Lab</span><span>PyTorch</span><span>PPO</span><span>Robotics</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects shell">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Engineering projects</h2>
+        <p>Projects combining physical prototyping, modelling, control and learning-based methods.</p>
+      </div>
+
+      <article class="project featured">
+        <div class="project-media">
+          <div class="media-placeholder">
+            <span>VIDEO</span>
+            <p>Add <code>assets/videos/hybrid-robot.mp4</code></p>
+          </div>
+          <video muted loop playsinline controls preload="metadata">
+            <source src="assets/videos/hybrid-robot.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta">Bachelor project · Physical prototype · 2026</div>
+          <h3>Hybrid ground–aerial robot</h3>
+          <p>
+            Designed, built and programmed a hybrid robot prototype as part of a two-person
+            bachelor project. The platform combines differential-drive ground locomotion with
+            quadrotor propulsion in a single experimental system.
+          </p>
+          <ul>
+            <li>Mechanical design, CAD and physical prototyping</li>
+            <li>Onboard electronics, sensors and system integration</li>
+            <li>Integration of wheeled drive and quadrotor propulsion</li>
+          </ul>
+          <div class="tags">
+            <span>Mechatronics</span><span>SolidWorks</span><span>Embedded systems</span><span>Control</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <div class="media-placeholder">
+            <span>VIDEO</span>
+            <p>Add <code>assets/videos/simscape-model.mp4</code></p>
+          </div>
+          <video muted loop playsinline controls preload="metadata">
+            <source src="assets/videos/simscape-model.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta">Research Assistant · University of Agder · 2026</div>
+          <h3>Integrated modelling of a hybrid robotic system</h3>
+          <p>
+            Built a complete MATLAB/Simulink and Simscape model integrating quadrotor dynamics,
+            differential-drive locomotion, rotor forces and ground contact.
+          </p>
+          <ul>
+            <li>DC-motor control for differential drive</li>
+            <li>Cascaded PID quadrotor control with rotor mixer</li>
+            <li>Rotor-assisted turning and incline-control studies</li>
+          </ul>
+          <div class="tags">
+            <span>MATLAB</span><span>Simulink</span><span>Simscape</span><span>PID</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <div class="media-placeholder">
+            <span>VIDEO</span>
+            <p>Add <code>assets/videos/rl-path-planning.mp4</code></p>
+          </div>
+          <video muted loop playsinline controls preload="metadata">
+            <source src="assets/videos/rl-path-planning.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta">Research Assistant · Ongoing</div>
+          <h3>Reinforcement learning & path planning</h3>
+          <p>
+            Developing PPO-based policies for coordinated rotor and DC-motor control in a
+            simulated hybrid robotic platform.
+          </p>
+          <ul>
+            <li>Rewards based on path deviation, energy use and traversal time</li>
+            <li>NVIDIA Isaac Lab / Isaac Sim simulation workflow with PyTorch</li>
+            <li>LiDAR SLAM, vision integration and physical validation planned</li>
+          </ul>
+          <div class="tags">
+            <span>Isaac Lab</span><span>PyTorch</span><span>PPO</span><span>Path planning</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <div class="media-placeholder">
+            <span>VIDEO</span>
+            <p>Add <code>assets/videos/bldc-imu-rig.mp4</code></p>
+          </div>
+          <video muted loop playsinline controls preload="metadata">
+            <source src="assets/videos/bldc-imu-rig.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta">Physical control project</div>
+          <h3>IMU feedback control of a BLDC test rig</h3>
+          <p>
+            Implemented closed-loop angle control on a physical BLDC test rig using IMU feedback,
+            state estimation and a PID controller.
+          </p>
+          <ul>
+            <li>ESC commands via DShot</li>
+            <li>IMU sensor fusion with Kalman filtering</li>
+            <li>Tracking tests across multiple reference angles</li>
+          </ul>
+          <div class="tags">
+            <span>BLDC</span><span>IMU</span><span>Kalman filter</span><span>DShot</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="compact-grid">
+        <article class="compact-project">
+          <div class="project-meta">Robotics coursework</div>
+          <h3>Industrial robot programming</h3>
+          <p>Programmed a Universal Robots manipulator and generated paths and trajectories from a scanned image.</p>
+          <div class="tags"><span>Universal Robots</span><span>ROS</span><span>Trajectory generation</span></div>
+        </article>
+
+        <article class="compact-project">
+          <div class="project-meta">Mechanical development</div>
+          <h3>Cycloidal gearboxes</h3>
+          <p>Designed and built cycloidal reduction gearboxes for a robotic-arm development project.</p>
+          <div class="tags"><span>Mechanical design</span><span>CAD</span><span>Prototyping</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about shell">
+      <div>
+        <p class="eyebrow">ABOUT</p>
+        <h2>Engineering across hardware and software</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I am a Mechatronics MSc student at the University of Agder with a particular interest
+          in robotics and control systems. My work spans physical prototyping, embedded systems,
+          dynamic modelling, classical control and reinforcement learning.
+        </p>
+        <p>
+          I enjoy projects where mechanical, electrical and software design have to work together
+          as one system, and where simulation can be connected back to real hardware.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>© <span id="year"></span> Marius Halaas</span>
+      <a href="https://github.com/marius133" target="_blank" rel="noreferrer">github.com/marius133</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
