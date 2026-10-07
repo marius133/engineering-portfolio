@@ -28,6 +28,7 @@ Place your compressed MP4 clips here:
 - `assets/videos/simscape-model.mp4`
 - `assets/videos/slope-control.mp4`
 - `assets/videos/thrust-assisted-turning.mp4`
+- `assets/videos/height-assist-control.mp4`
 - `assets/videos/rl-path-planning.mp4`
 - `assets/videos/bldc-imu-rig.mp4`
 
