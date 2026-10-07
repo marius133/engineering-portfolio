@@ -411,6 +411,19 @@ h1 {
 
 .compact-project h3 { font-size: 1.45rem; }
 
+.compact-project-photo {
+  float: right;
+  width: 42%;
+  max-width: 220px;
+  aspect-ratio: 4/3;
+  margin: 0 0 16px 20px;
+  object-fit: cover;
+  object-position: center 48%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #080b0f;
+}
+
 .about {
   padding: 100px 0 120px;
   display: grid;
@@ -461,6 +474,13 @@ footer a:hover { color: var(--text); }
     border-bottom: 1px solid var(--line);
   }
   .compact-grid { grid-template-columns: 1fr; }
+  .compact-project-photo {
+    float: none;
+    width: 100%;
+    max-width: none;
+    aspect-ratio: 16/9;
+    margin: 0 0 20px;
+  }
   .about { gap: 32px; }
   nav { gap: 16px; }
 }
