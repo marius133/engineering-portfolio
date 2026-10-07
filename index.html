@@ -119,56 +119,98 @@
       <section class="control-studies" aria-labelledby="control-studies-title">
         <div class="control-studies-heading">
           <div>
-            <p class="eyebrow">HYBRID CONTROL STUDIES</p>
-            <h3 id="control-studies-title">Rotor-assisted mobility</h3>
+            <p class="eyebrow">CONTROL STUDIES</p>
+            <h3 id="control-studies-title">Control strategies evaluated in the integrated model</h3>
           </div>
           <p>
-            Two simulation studies using the integrated model to investigate how rotor thrust
-            can extend the robot's ground-mobility capabilities.
+            The integrated simulation model is used to develop and evaluate both hybrid
+            ground-mobility strategies and flight-control functions.
           </p>
         </div>
 
-        <div class="study-grid">
-          <article class="study-card">
-            <div class="project-media study-media">
-              <div class="media-placeholder">
-                <span>VIDEO</span>
-                <p>Add <code>assets/videos/thrust-assisted-turning.mp4</code></p>
-              </div>
-              <video muted loop playsinline controls preload="metadata">
-                <source src="assets/videos/thrust-assisted-turning.mp4" type="video/mp4">
-              </video>
+        <div class="study-group">
+          <div class="study-group-heading">
+            <span class="study-index">01</span>
+            <div>
+              <h4>Ground mobility augmentation</h4>
+              <p>Using rotor thrust to extend the robot's capabilities while operating on the ground.</p>
             </div>
-            <div class="study-copy">
-              <div class="project-meta">Simulation study · Turning</div>
-              <h4>Thrust-assisted turning</h4>
-              <p>
-                Rotor thrust is applied during ground turning to assist the manoeuvre and study
-                its effect on turning performance and achievable turning radius.
-              </p>
-            </div>
-          </article>
+          </div>
 
-          <article class="study-card">
-            <div class="project-media study-media">
+          <div class="study-grid">
+            <article class="study-card">
+              <div class="project-media study-media">
+                <div class="media-placeholder">
+                  <span>VIDEO</span>
+                  <p>Add <code>assets/videos/thrust-assisted-turning.mp4</code></p>
+                </div>
+                <video muted loop playsinline controls preload="metadata">
+                  <source src="assets/videos/thrust-assisted-turning.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="study-copy">
+                <div class="project-meta">Simulation study · Turning</div>
+                <h4>Thrust-assisted turning</h4>
+                <p>
+                  Rotor thrust is applied during ground turning to assist the manoeuvre and study
+                  its effect on turning performance and achievable turning radius.
+                </p>
+              </div>
+            </article>
+
+            <article class="study-card">
+              <div class="project-media study-media">
+                <div class="media-placeholder">
+                  <span>VIDEO</span>
+                  <p>Add <code>assets/videos/slope-control.mp4</code></p>
+                </div>
+                <video muted loop playsinline controls preload="metadata">
+                  <source src="assets/videos/slope-control.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="study-copy">
+                <div class="project-meta">Simulation study · Slope control</div>
+                <h4>Rotor-assisted slope control</h4>
+                <p>
+                  Two distance sensors mounted a known distance apart measure the distance from the
+                  robot to the slope independently. The difference between the two measurements is
+                  used together with the known sensor spacing to estimate the robot's angle relative
+                  to the slope. This relative-angle estimate is fed back to the controller, which
+                  regulates rotor assistance and vehicle attitude to maintain or increase useful
+                  wheel loading and improve traction on steep inclines.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="study-group flight-study-group">
+          <div class="study-group-heading">
+            <span class="study-index">02</span>
+            <div>
+              <h4>Flight control</h4>
+              <p>Feedback-assisted vertical control built on top of the simulated flight-control system.</p>
+            </div>
+          </div>
+
+          <article class="wide-study-card">
+            <div class="project-media wide-study-media">
               <div class="media-placeholder">
                 <span>VIDEO</span>
-                <p>Add <code>assets/videos/slope-control.mp4</code></p>
+                <p>Add <code>assets/videos/height-assist-control.mp4</code></p>
               </div>
               <video muted loop playsinline controls preload="metadata">
-                <source src="assets/videos/slope-control.mp4" type="video/mp4">
+                <source src="assets/videos/height-assist-control.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="study-copy">
-              <div class="project-meta">Simulation study · Slope control</div>
-              <h4>Rotor-assisted slope control</h4>
+            <div class="wide-study-copy">
+              <div class="project-meta">Simulation study · Vertical control</div>
+              <h4>Height-assist control</h4>
               <p>
-                Two distance sensors mounted a known distance apart measure the distance from the
-                robot to the slope independently. The difference between the two measurements is
-                used together with the known sensor spacing to estimate the robot's angle relative
-                to the slope. This relative-angle estimate is fed back to the controller, which
-                regulates rotor assistance and vehicle attitude to maintain or increase useful
-                wheel loading and improve traction on steep inclines.
+                Closed-loop vertical control is added to the flight-control system to regulate
+                height around a commanded reference. The simulation compares raw flight mode with
+                height-assist mode, showing how feedback can reduce the need for continuous manual
+                vertical-thrust adjustment.
               </p>
             </div>
           </article>
