@@ -159,17 +159,22 @@
               </figure>
 
               <figure class="technical-card">
-                <div class="technical-media">
+                <div class="technical-media modal-media">
                   <div class="image-placeholder">
-                    <span>IMAGE</span>
-                    <p>Add <code>assets/images/bachelor-modal-analysis.jpg</code></p>
+                    <span>VIDEO</span>
+                    <p>Add <code>assets/videos/bachelor-modal-analysis.mp4</code></p>
                   </div>
-                  <img
-                    src="assets/images/bachelor-modal-analysis.jpg"
-                    alt="Modal analysis of the hybrid robot structure"
-                    loading="lazy"
-                    onload="this.parentElement.classList.add('has-image')"
+                  <video
+                    muted
+                    autoplay
+                    loop
+                    playsinline
+                    preload="metadata"
+                    aria-label="Animated modal analysis of the hybrid robot structure"
+                    onloadeddata="this.parentElement.classList.add('has-video')"
                   >
+                    <source src="assets/videos/bachelor-modal-analysis.mp4" type="video/mp4">
+                  </video>
                 </div>
                 <figcaption>
                   <h5>Modal analysis</h5>
