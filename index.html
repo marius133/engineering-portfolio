@@ -403,13 +403,22 @@
           <div class="learning-grid">
             <article class="learning-card">
               <figure class="rl-plot-figure">
-                <div class="rl-plot-media">
+                <button
+                  class="rl-plot-media rl-plot-open"
+                  type="button"
+                  data-dialog-target="rl-plot-dialog"
+                  aria-label="Open PPO rotor-thrust plot in fullscreen"
+                >
                   <img
                     src="assets/images/rl-individual-rotor-thrust.webp?v=20261008p"
                     alt="Four trajectory plots showing front-left, front-right, rear-left and rear-right rotor thrust during PPO-controlled path tracking"
                     loading="lazy"
                   >
-                </div>
+                  <span class="zoom-hint" aria-hidden="true">
+                    <span class="zoom-icon">↗</span>
+                    Click to enlarge
+                  </span>
+                </button>
                 <figcaption class="rl-plot-legend">
                   <span><i class="legend-line legend-reference"></i>Reference path</span>
                   <span><i class="legend-gradient"></i>Actual trajectory — colour indicates rotor thrust</span>
@@ -430,6 +439,83 @@
                   <li>MATLAB Reinforcement Learning Toolbox</li>
                   <li>Reward shaping for tracking, energy use and episode time</li>
                 </ul>
+
+                <div class="rl-results">
+                  <div class="rl-result-metrics" aria-label="PPO evaluation summary">
+                    <div><strong>4 / 4</strong><span>Successful cases</span></div>
+                    <div><strong>46.1 s</strong><span>Completion time</span></div>
+                    <div><strong>6.96 kJ</strong><span>Energy use</span></div>
+                  </div>
+
+                  <p class="rl-result-callout">
+                    The learned controller reduced completion time by <strong>7.1%</strong> compared
+                    with the zero-thrust/rule baseline (49.6 s), while consuming less energy than
+                    every fixed-thrust strategy. It also slightly outperformed fixed20 in time
+                    (46.1 vs 46.2 s) while using <strong>4.1% less energy</strong>.
+                  </p>
+
+                  <details class="rl-results-details">
+                    <summary>View full controller comparison</summary>
+                    <div class="rl-results-table-wrap">
+                      <table class="rl-results-table">
+                        <thead>
+                          <tr>
+                            <th>Method</th>
+                            <th>Success</th>
+                            <th>Energy</th>
+                            <th>Time</th>
+                            <th>Mean max tilt</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Zero thrust</td>
+                            <td>4 / 4</td>
+                            <td>498 J</td>
+                            <td>49.6 s</td>
+                            <td>0.00139 rad</td>
+                          </tr>
+                          <tr>
+                            <td>Fixed 60%</td>
+                            <td>4 / 4</td>
+                            <td>17.4 kJ</td>
+                            <td>39.1 s</td>
+                            <td>0.00135 rad</td>
+                          </tr>
+                          <tr>
+                            <td>Fixed 40%</td>
+                            <td>4 / 4</td>
+                            <td>12.9 kJ</td>
+                            <td>42.9 s</td>
+                            <td>0.00135 rad</td>
+                          </tr>
+                          <tr class="nn-result-row">
+                            <td><strong>PPO / NN</strong></td>
+                            <td><strong>4 / 4</strong></td>
+                            <td><strong>6.96 kJ</strong></td>
+                            <td><strong>46.1 s</strong></td>
+                            <td><strong>0.00206 rad</strong></td>
+                          </tr>
+                          <tr>
+                            <td>Fixed 20%</td>
+                            <td>4 / 4</td>
+                            <td>7.26 kJ</td>
+                            <td>46.2 s</td>
+                            <td>0.00135 rad</td>
+                          </tr>
+                          <tr>
+                            <td>Rule-based</td>
+                            <td>4 / 4</td>
+                            <td>498 J</td>
+                            <td>49.6 s</td>
+                            <td>0.00139 rad</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </details>
+                </div>
+
                 <div class="tags">
                   <span>MATLAB</span><span>Simulink</span><span>PPO</span><span>Continuous control</span>
                 </div>
@@ -593,5 +679,20 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <dialog class="image-dialog" id="rl-plot-dialog" aria-label="Fullscreen PPO rotor-thrust plot">
+    <button class="image-dialog-close" type="button" aria-label="Close fullscreen image">×</button>
+    <div class="image-dialog-content">
+      <img
+        src="assets/images/rl-individual-rotor-thrust.webp?v=20261008p"
+        alt="Fullscreen view of the four PPO-controlled rotor-thrust trajectory plots"
+      >
+      <p>
+        PPO-controlled individual rotor thrust during path tracking. Colour indicates the actual
+        thrust command for each rotor; the dashed line is the reference path.
+      </p>
+    </div>
+  </dialog>
+
 </body>
 </html>
