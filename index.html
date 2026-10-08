@@ -402,21 +402,28 @@
 
           <div class="learning-grid">
             <article class="learning-card">
-              <div class="project-media learning-media">
-                <div class="media-placeholder">
-                  <span>VIDEO</span>
-                  <p>Add <code>assets/videos/matlab-ppo-rotor-control.mp4</code></p>
+              <figure class="rl-plot-figure">
+                <div class="rl-plot-media">
+                  <img
+                    src="assets/images/rl-individual-rotor-thrust.webp?v=20261008p"
+                    alt="Four trajectory plots showing front-left, front-right, rear-left and rear-right rotor thrust during PPO-controlled path tracking"
+                    loading="lazy"
+                  >
                 </div>
-                <video muted loop playsinline controls preload="metadata">
-                  <source src="assets/videos/matlab-ppo-rotor-control.mp4" type="video/mp4">
-                </video>
-              </div>
+                <figcaption class="rl-plot-legend">
+                  <span><i class="legend-line legend-reference"></i>Reference path</span>
+                  <span><i class="legend-gradient"></i>Actual trajectory — colour indicates rotor thrust</span>
+                  <span class="legend-rotors">FL / FR / RL / RR = rotor position</span>
+                </figcaption>
+              </figure>
               <div class="learning-copy">
                 <div class="project-meta">Personal project · MATLAB / Simulink</div>
                 <h4>PPO-based individual rotor control</h4>
                 <p>
                   Developed a PPO policy with four continuous outputs so the network could command
                   each rotor independently rather than relying on a conventional rotor mixer.
+                  The figure shows how the learned policy varies each rotor's thrust while tracking
+                  the commanded trajectory.
                 </p>
                 <ul>
                   <li>Four continuous actions, one per rotor</li>
