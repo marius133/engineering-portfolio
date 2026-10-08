@@ -412,16 +412,28 @@ h1 {
 .compact-project h3 { font-size: 1.45rem; }
 
 .compact-project-photo {
-  float: right;
-  width: 42%;
-  max-width: 220px;
-  aspect-ratio: 4/3;
-  margin: 0 0 16px 20px;
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: none;
+  height: 230px;
+  margin: 0 0 22px;
   object-fit: cover;
-  object-position: center 48%;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 12px;
   background: #080b0f;
+}
+
+.robot-project-photo {
+  object-position: center 50%;
+}
+
+.fume-project-photo {
+  object-fit: contain;
+  padding: 10px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(105,184,255,.08), transparent 65%),
+    #0c1219;
 }
 
 .about {
@@ -475,11 +487,7 @@ footer a:hover { color: var(--text); }
   }
   .compact-grid { grid-template-columns: 1fr; }
   .compact-project-photo {
-    float: none;
-    width: 100%;
-    max-width: none;
-    aspect-ratio: 16/9;
-    margin: 0 0 20px;
+    height: 210px;
   }
   .about { gap: 32px; }
   nav { gap: 16px; }
