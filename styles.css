@@ -436,6 +436,14 @@ h1 {
     #0c1219;
 }
 
+.actuator-project-photo {
+  object-fit: contain;
+  padding: 12px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(105,184,255,.08), transparent 65%),
+    #0c1219;
+}
+
 .about {
   padding: 100px 0 120px;
   display: grid;
