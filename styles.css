@@ -416,21 +416,21 @@ h1 {
   float: none;
   width: 100%;
   max-width: none;
-  height: 230px;
+  height: auto;
   margin: 0 0 22px;
-  object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 12px;
-  background: #080b0f;
+  background: #0c1219;
 }
 
 .robot-project-photo {
-  object-position: center 50%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .fume-project-photo {
   object-fit: contain;
-  padding: 10px;
+  padding: 12px;
   background:
     radial-gradient(circle at 50% 45%, rgba(105,184,255,.08), transparent 65%),
     #0c1219;
@@ -486,9 +486,6 @@ footer a:hover { color: var(--text); }
     border-bottom: 1px solid var(--line);
   }
   .compact-grid { grid-template-columns: 1fr; }
-  .compact-project-photo {
-    height: 210px;
-  }
   .about { gap: 32px; }
   nav { gap: 16px; }
 }
