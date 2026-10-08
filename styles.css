@@ -825,6 +825,24 @@ footer a:hover { color: var(--text); }
   background: #0c1219;
 }
 
+.modal-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.topology-media {
+  background: #fff;
+}
+
+.topology-media img {
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  background: #fff;
+}
+
 .image-placeholder {
   position: absolute;
   inset: 0;
