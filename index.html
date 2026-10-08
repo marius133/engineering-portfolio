@@ -56,363 +56,479 @@
       <div class="section-heading">
         <p class="eyebrow">SELECTED WORK</p>
         <h2>Engineering projects</h2>
-        <p>Projects combining physical prototyping, modelling, control and learning-based methods.</p>
+        <p>
+          Projects spanning physical prototyping, structural analysis, dynamic modelling,
+          classical control and learning-based robotics.
+        </p>
       </div>
 
-      <article class="project featured">
-        <div class="project-media">
-          <div class="media-placeholder">
-            <span>VIDEO</span>
-            <p>Add <code>assets/videos/hybrid-robot.mp4</code></p>
-          </div>
-          <video muted loop playsinline controls preload="metadata">
-            <source src="assets/videos/hybrid-robot.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-copy">
-          <div class="project-meta">Bachelor project · Physical prototype · 2026</div>
-          <h3>Hybrid ground–aerial robot</h3>
-          <p>
-            Designed, built and programmed a hybrid robot prototype as part of a two-person
-            bachelor project. The platform combines differential-drive ground locomotion with
-            quadrotor propulsion in a single experimental system.
-          </p>
-          <ul>
-            <li>Mechanical design, CAD and physical prototyping</li>
-            <li>Onboard electronics, sensors and system integration</li>
-            <li>Integration of wheeled drive and quadrotor propulsion</li>
-          </ul>
-          <div class="tags">
-            <span>Mechatronics</span><span>SolidWorks</span><span>Embedded systems</span><span>Control</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <div class="media-placeholder">
-            <span>VIDEO</span>
-            <p>Add <code>assets/videos/simscape-model.mp4</code></p>
-          </div>
-          <video muted loop playsinline controls preload="metadata">
-            <source src="assets/videos/simscape-model.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-copy">
-          <div class="project-meta">Research Assistant · University of Agder · 2026</div>
-          <h3>Integrated modelling of a hybrid robotic system</h3>
-          <p>
-            Built a MATLAB/Simulink and Simscape model of the physical hybrid ground–aerial robot
-            developed in the bachelor project. The simulation uses parameters derived from the
-            prototype and integrates quadrotor dynamics, differential-drive locomotion, rotor
-            forces and ground contact in a single model.
-          </p>
-          <ul>
-            <li>Model geometry and physical parameters based on the bachelor prototype</li>
-            <li>DC-motor control for differential drive</li>
-            <li>Cascaded PID quadrotor control with rotor mixer</li>
-            <li>Rotor-assisted turning and incline-control studies</li>
-          </ul>
-          <div class="tags">
-            <span>MATLAB</span><span>Simulink</span><span>Simscape</span><span>PID</span>
-          </div>
-        </div>
-      </article>
-
-      <section class="research-contribution" aria-labelledby="characterization-title">
-        <div class="characterization-media">
-          <div class="characterization-placeholder">
-            <span>IMAGE</span>
-            <p>Add <code>assets/images/thrust-measurement-rig.jpg</code></p>
-          </div>
-          <img
-            src="assets/images/thrust-measurement-rig.jpg"
-            alt="Rotor thrust measurement rig used for experimental characterization of the hybrid robot"
-            loading="lazy"
-            onload="this.parentElement.classList.add('has-image')"
-          >
-        </div>
-        <div class="characterization-copy">
-          <div class="project-meta">Research contribution · Experimental characterization</div>
-          <h3 id="characterization-title">Experimental characterization & parameter identification</h3>
-          <p>
-            Contributed substantially to experimental characterization and parameter identification
-            of the physical hybrid robot through experimental setup, measurements, data analysis
-            and model refinement. The work supports physically grounded parameters for the
-            integrated simulation and included rotor-thrust characterization using a dedicated
-            measurement rig.
-          </p>
-          <ul>
-            <li>Supported development and setup of physical characterization experiments</li>
-            <li>Performed rotor-thrust measurements for propulsion characterization</li>
-            <li>Processed experimental data and contributed to parameter estimation</li>
-            <li>Used measured results to support refinement of the MATLAB/Simscape model</li>
-          </ul>
-          <div class="tags">
-            <span>Experimental testing</span><span>Parameter identification</span><span>Data analysis</span><span>Thrust measurement</span><span>Model refinement</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="control-studies" aria-labelledby="control-studies-title">
-        <div class="control-studies-heading">
+      <section class="project-family" aria-labelledby="hybrid-family-title">
+        <header class="family-header">
           <div>
-            <p class="eyebrow">CONTROL STUDIES</p>
-            <h3 id="control-studies-title">Control strategies evaluated in the integrated model</h3>
+            <p class="eyebrow">FEATURED CASE STUDY</p>
+            <h2 id="hybrid-family-title">Hybrid ground–aerial robotic platform</h2>
           </div>
           <p>
-            The integrated simulation model is used to develop and evaluate both hybrid
-            ground-mobility strategies and flight-control functions.
+            One platform developed across several stages: physical design and prototyping,
+            simulation and control, experimental characterization, and learning-based autonomy.
           </p>
+        </header>
+
+        <div class="family-flow" aria-label="Project development stages">
+          <span>01 Physical platform</span>
+          <span>02 Modelling & control</span>
+          <span>03 Characterization</span>
+          <span>04 Learning & autonomy</span>
         </div>
 
-        <div class="study-group">
-          <div class="study-group-heading">
-            <span class="study-index">01</span>
+        <section class="project-stage" aria-labelledby="stage-physical-title">
+          <header class="stage-header">
+            <span class="stage-number">01</span>
             <div>
-              <h4>Ground mobility augmentation</h4>
-              <p>Using rotor thrust to extend the robot's capabilities while operating on the ground.</p>
+              <div class="project-meta">Bachelor project · Physical prototype · 2026</div>
+              <h3 id="stage-physical-title">Physical platform & mechanical development</h3>
+              <p>
+                Designed, built and programmed a hybrid robot prototype combining
+                differential-drive ground locomotion with quadrotor propulsion in one platform.
+              </p>
             </div>
-          </div>
+          </header>
 
-          <div class="study-grid">
-            <article class="study-card">
-              <div class="project-media study-media">
-                <div class="media-placeholder">
-                  <span>VIDEO</span>
-                  <p>Add <code>assets/videos/thrust-assisted-turning.mp4?v=20261008</code></p>
-                </div>
-                <video muted loop playsinline controls preload="metadata">
-                  <source src="assets/videos/thrust-assisted-turning.mp4?v=20261008" type="video/mp4">
-                </video>
-              </div>
-              <div class="study-copy">
-                <div class="project-meta">Simulation study · Turning</div>
-                <h4>Thrust-assisted turning</h4>
-                <p>
-                  Total upward rotor thrust is commanded as a percentage of the vehicle's own
-                  weight. By partially unloading the wheels, the rotor thrust reduces the normal
-                  force and therefore the lateral friction forces that oppose differential-drive
-                  turning. This reduces lateral wheel scrubbing and allows the robot to follow a
-                  tighter commanded trajectory. In the simulation, a target turning radius of
-                  0.375 m is achieved with rotor thrust corresponding to approximately 80% of the
-                  vehicle weight, reducing the turning radius by 78.17% compared with the
-                  unassisted case.
-                </p>
-              </div>
-            </article>
-
-            <article class="study-card">
-              <div class="project-media study-media">
-                <div class="media-placeholder">
-                  <span>VIDEO</span>
-                  <p>Add <code>assets/videos/slope-control.mp4</code></p>
-                </div>
-                <video muted loop playsinline controls preload="metadata">
-                  <source src="assets/videos/slope-control.mp4" type="video/mp4">
-                </video>
-              </div>
-              <div class="study-copy">
-                <div class="project-meta">Simulation study · Slope control</div>
-                <h4>Rotor-assisted slope control</h4>
-                <p>
-                  Two distance sensors mounted a known distance apart measure the distance from the
-                  robot to the slope independently. The difference between the two measurements is
-                  used together with the known sensor spacing to estimate the robot's angle relative
-                  to the slope. This relative-angle estimate is fed back to the controller, which
-                  regulates rotor assistance and vehicle attitude to maintain or increase useful
-                  wheel loading and improve traction on steep inclines.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="study-group flight-study-group">
-          <div class="study-group-heading">
-            <span class="study-index">02</span>
-            <div>
-              <h4>Flight control</h4>
-              <p>Feedback-assisted vertical control built on top of the simulated flight-control system.</p>
-            </div>
-          </div>
-
-          <article class="wide-study-card">
-            <div class="project-media wide-study-media">
+          <div class="stage-layout">
+            <div class="project-media">
               <div class="media-placeholder">
                 <span>VIDEO</span>
-                <p>Add <code>assets/videos/height-assist-control.mp4</code></p>
+                <p>Add <code>assets/videos/hybrid-robot.mp4</code></p>
               </div>
               <video muted loop playsinline controls preload="metadata">
-                <source src="assets/videos/height-assist-control.mp4" type="video/mp4">
+                <source src="assets/videos/hybrid-robot.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="wide-study-copy">
-              <div class="project-meta">Simulation study · Vertical control</div>
-              <h4>Height-assist control</h4>
+
+            <div class="stage-copy">
+              <ul>
+                <li>Mechanical architecture, CAD and physical prototyping</li>
+                <li>Onboard electronics, sensors and system integration</li>
+                <li>Differential-drive ground system integrated with quadrotor propulsion</li>
+                <li>Design-for-manufacture and iterative refinement of the physical platform</li>
+              </ul>
+              <div class="metric-row">
+                <div><strong>3.07 kg</strong><span>Prototype mass</span></div>
+                <div><strong>60 mm</strong><span>Wheel diameter</span></div>
+                <div><strong>7 in</strong><span>Propeller class</span></div>
+              </div>
+              <div class="tags">
+                <span>Mechatronics</span><span>SolidWorks</span><span>Embedded systems</span><span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="technical-subsection">
+            <div class="subsection-heading">
+              <div>
+                <p class="eyebrow">MECHANICAL ANALYSIS</p>
+                <h4>Structural analysis & design optimization</h4>
+              </div>
               <p>
-                Closed-loop vertical control is added to the flight-control system to regulate
-                height around a commanded reference. The simulation compares raw flight mode with
-                height-assist mode, showing how feedback can reduce the need for continuous manual
-                vertical-thrust adjustment.
+                Space for the engineering analysis behind the physical design, rather than
+                presenting the prototype only as a finished build.
               </p>
+            </div>
+
+            <div class="technical-gallery">
+              <figure class="technical-card">
+                <div class="technical-media">
+                  <div class="image-placeholder">
+                    <span>IMAGE</span>
+                    <p>Add <code>assets/images/bachelor-fea-analysis.jpg</code></p>
+                  </div>
+                  <img
+                    src="assets/images/bachelor-fea-analysis.jpg"
+                    alt="Finite element analysis of the hybrid robot structure"
+                    loading="lazy"
+                    onload="this.parentElement.classList.add('has-image')"
+                  >
+                </div>
+                <figcaption>
+                  <h5>Structural FEA</h5>
+                  <p>
+                    Structural load cases used to evaluate deformation, stress distribution
+                    and critical regions in the mechanical design.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="technical-card">
+                <div class="technical-media">
+                  <div class="image-placeholder">
+                    <span>IMAGE</span>
+                    <p>Add <code>assets/images/bachelor-modal-analysis.jpg</code></p>
+                  </div>
+                  <img
+                    src="assets/images/bachelor-modal-analysis.jpg"
+                    alt="Modal analysis of the hybrid robot structure"
+                    loading="lazy"
+                    onload="this.parentElement.classList.add('has-image')"
+                  >
+                </div>
+                <figcaption>
+                  <h5>Modal analysis</h5>
+                  <p>
+                    Evaluated structural vibration modes and natural frequencies to identify
+                    dynamic behaviour relevant to the rotor-driven platform.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="technical-card">
+                <div class="technical-media">
+                  <div class="image-placeholder">
+                    <span>IMAGE</span>
+                    <p>Add <code>assets/images/bachelor-topology-optimization.jpg</code></p>
+                  </div>
+                  <img
+                    src="assets/images/bachelor-topology-optimization.jpg"
+                    alt="Topology optimization study for the hybrid robot"
+                    loading="lazy"
+                    onload="this.parentElement.classList.add('has-image')"
+                  >
+                </div>
+                <figcaption>
+                  <h5>Topology optimization</h5>
+                  <p>
+                    Explored material distribution and stiffness-to-weight trade-offs to guide
+                    lighter mechanical geometry without losing required structural performance.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-stage" aria-labelledby="stage-model-title">
+          <header class="stage-header">
+            <span class="stage-number">02</span>
+            <div>
+              <div class="project-meta">Research Assistant · University of Agder · 2026</div>
+              <h3 id="stage-model-title">Integrated modelling & classical control</h3>
+              <p>
+                Extended the physical platform into a MATLAB/Simulink and Simscape model that
+                combines ground and flight dynamics within one simulation environment.
+              </p>
+            </div>
+          </header>
+
+          <div class="stage-layout">
+            <div class="project-media">
+              <div class="media-placeholder">
+                <span>VIDEO</span>
+                <p>Add <code>assets/videos/simscape-model.mp4</code></p>
+              </div>
+              <video muted loop playsinline controls preload="metadata">
+                <source src="assets/videos/simscape-model.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="stage-copy">
+              <ul>
+                <li>6-DOF body dynamics, wheel revolute joints and ground-contact interaction</li>
+                <li>Closed-loop DC-motor control for differential drive</li>
+                <li>Cascaded attitude/rate PID control with rotor mixing</li>
+                <li>Rotor-assisted ground-mobility strategies developed in simulation</li>
+              </ul>
+              <div class="tags">
+                <span>MATLAB</span><span>Simulink</span><span>Simscape</span><span>6-DOF</span><span>PID</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="technical-subsection compact-subsection">
+            <div class="subsection-heading">
+              <div>
+                <p class="eyebrow">CONTROL STUDIES</p>
+                <h4>Hybrid mobility and flight-control studies</h4>
+              </div>
+              <p>
+                Focused studies developed on top of the integrated model, grouped here as part
+                of the same modelling and control project.
+              </p>
+            </div>
+
+            <div class="study-grid">
+              <article class="study-card">
+                <div class="project-media study-media">
+                  <div class="media-placeholder">
+                    <span>VIDEO</span>
+                    <p>Add <code>assets/videos/thrust-assisted-turning.mp4?v=20261008</code></p>
+                  </div>
+                  <video muted loop playsinline controls preload="metadata">
+                    <source src="assets/videos/thrust-assisted-turning.mp4?v=20261008" type="video/mp4">
+                  </video>
+                </div>
+                <div class="study-copy">
+                  <div class="project-meta">Ground mobility · Turning</div>
+                  <h4>Thrust-assisted turning</h4>
+                  <p>
+                    Upward rotor thrust partially unloads the wheels and reduces lateral
+                    scrub forces. The approach reduced turning radius by 78.17% in the evaluated case.
+                  </p>
+                </div>
+              </article>
+
+              <article class="study-card">
+                <div class="project-media study-media">
+                  <div class="media-placeholder">
+                    <span>VIDEO</span>
+                    <p>Add <code>assets/videos/slope-control.mp4</code></p>
+                  </div>
+                  <video muted loop playsinline controls preload="metadata">
+                    <source src="assets/videos/slope-control.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="study-copy">
+                  <div class="project-meta">Ground mobility · Incline</div>
+                  <h4>Rotor-assisted incline control</h4>
+                  <p>
+                    Distance measurements estimate the robot's angle relative to the slope,
+                    enabling rotor assistance when wheel traction alone becomes insufficient.
+                  </p>
+                </div>
+              </article>
+
+              <article class="study-card">
+                <div class="project-media study-media">
+                  <div class="media-placeholder">
+                    <span>VIDEO</span>
+                    <p>Add <code>assets/videos/height-assist-control.mp4</code></p>
+                  </div>
+                  <video muted loop playsinline controls preload="metadata">
+                    <source src="assets/videos/height-assist-control.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="study-copy">
+                  <div class="project-meta">Flight control · Vertical</div>
+                  <h4>Height-assist control</h4>
+                  <p>
+                    Added closed-loop vertical control around a height reference to reduce the
+                    need for continuous manual vertical-thrust adjustment.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-stage" aria-labelledby="stage-characterization-title">
+          <header class="stage-header">
+            <span class="stage-number">03</span>
+            <div>
+              <div class="project-meta">Research contribution · Experimental characterization</div>
+              <h3 id="stage-characterization-title">Experimental characterization & parameter identification</h3>
+              <p>
+                Contributed substantially to characterization of the physical robot through
+                experimental setup, measurement, data analysis and model refinement.
+              </p>
+            </div>
+          </header>
+
+          <div class="stage-layout">
+            <div class="characterization-media">
+              <div class="characterization-placeholder">
+                <span>IMAGE</span>
+                <p>Add <code>assets/images/thrust-measurement-rig.jpg</code></p>
+              </div>
+              <img
+                src="assets/images/thrust-measurement-rig.jpg"
+                alt="Rotor thrust measurement rig used for experimental characterization of the hybrid robot"
+                loading="lazy"
+                onload="this.parentElement.classList.add('has-image')"
+              >
+            </div>
+
+            <div class="stage-copy">
+              <ul>
+                <li>Supported development and setup of physical characterization experiments</li>
+                <li>Performed rotor-thrust measurements for propulsion characterization</li>
+                <li>Processed experimental data and contributed to parameter estimation</li>
+                <li>Used measured results to support refinement of the MATLAB/Simscape model</li>
+              </ul>
+              <div class="tags">
+                <span>Experimental testing</span><span>Parameter identification</span><span>Data analysis</span><span>Thrust measurement</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="project-stage" aria-labelledby="stage-learning-title">
+          <header class="stage-header">
+            <span class="stage-number">04</span>
+            <div>
+              <div class="project-meta">Learning-based control · Personal & research work</div>
+              <h3 id="stage-learning-title">Reinforcement learning & autonomy</h3>
+              <p>
+                Learning-based work on the same robotic platform, progressing from direct rotor
+                control in MATLAB to coordinated mobility and path planning in Isaac Lab.
+              </p>
+            </div>
+          </header>
+
+          <div class="learning-grid">
+            <article class="learning-card">
+              <div class="project-media learning-media">
+                <div class="media-placeholder">
+                  <span>VIDEO</span>
+                  <p>Add <code>assets/videos/matlab-ppo-rotor-control.mp4</code></p>
+                </div>
+                <video muted loop playsinline controls preload="metadata">
+                  <source src="assets/videos/matlab-ppo-rotor-control.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="learning-copy">
+                <div class="project-meta">Personal project · MATLAB / Simulink</div>
+                <h4>PPO-based individual rotor control</h4>
+                <p>
+                  Developed a PPO policy with four continuous outputs so the network could command
+                  each rotor independently rather than relying on a conventional rotor mixer.
+                </p>
+                <ul>
+                  <li>Four continuous actions, one per rotor</li>
+                  <li>MATLAB Reinforcement Learning Toolbox</li>
+                  <li>Reward shaping for tracking, energy use and episode time</li>
+                </ul>
+                <div class="tags">
+                  <span>MATLAB</span><span>Simulink</span><span>PPO</span><span>Continuous control</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="learning-card">
+              <div class="project-media learning-media">
+                <div class="media-placeholder">
+                  <span>VIDEO</span>
+                  <p>Add <code>assets/videos/rl-path-planning.mp4</code></p>
+                </div>
+                <video muted loop playsinline controls preload="metadata">
+                  <source src="assets/videos/rl-path-planning.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="learning-copy">
+                <div class="project-meta">Research Assistant · Ongoing</div>
+                <h4>Reinforcement learning & path planning</h4>
+                <p>
+                  Developing PPO-based policies for coordinated rotor and DC-motor control in
+                  NVIDIA Isaac Lab / Isaac Sim, with LiDAR SLAM, vision and physical validation planned.
+                </p>
+                <ul>
+                  <li>Rewards based on path deviation, energy use and traversal time</li>
+                  <li>PyTorch-based training workflow in Isaac Lab</li>
+                  <li>Long-term goal: physically validated digital twin</li>
+                </ul>
+                <div class="tags">
+                  <span>Isaac Lab</span><span>PyTorch</span><span>PPO</span><span>Path planning</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="other-projects" aria-labelledby="other-projects-title">
+        <header class="other-projects-heading">
+          <p class="eyebrow">OTHER ENGINEERING WORK</p>
+          <h2 id="other-projects-title">Additional projects</h2>
+          <p>
+            Standalone projects showing control, robotics, mechanical development and product design
+            outside the main hybrid-robot case study.
+          </p>
+        </header>
+
+        <article class="standalone-project">
+          <div class="project-media">
+            <div class="media-placeholder">
+              <span>VIDEO</span>
+              <p>Add <code>assets/videos/bldc-imu-rig.mp4</code></p>
+            </div>
+            <video muted loop playsinline controls preload="metadata">
+              <source src="assets/videos/bldc-imu-rig.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="standalone-copy">
+            <div class="project-meta">Physical control project</div>
+            <h3>IMU feedback control of a BLDC test rig</h3>
+            <p>
+              Built a closed-loop angle-control system on a physical BLDC test rig using an ESP32,
+              IMU feedback, Kalman-filtered angle estimation and PID control.
+            </p>
+            <ul>
+              <li>IMU-based closed-loop angle feedback</li>
+              <li>ESP32 controller with DShot ESC commands</li>
+              <li>Kalman-filtered state estimation</li>
+              <li>Tracking across multiple commanded angle setpoints</li>
+            </ul>
+            <div class="tags">
+              <span>ESP32</span><span>BLDC</span><span>IMU</span><span>Kalman filter</span><span>PID</span><span>DShot</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="compact-grid">
+          <article class="compact-project">
+            <img
+              class="compact-project-photo robot-project-photo"
+              src="assets/images/industrial-robot-project.webp?v=20261008d"
+              alt="Universal Robots manipulator executing a drawing trajectory during robotics coursework"
+              loading="lazy"
+            >
+            <div class="project-meta">Robotics coursework</div>
+            <h3>Industrial robot programming</h3>
+            <p>
+              Programmed a Universal Robots manipulator in ROS using Python, with RViz for
+              visualization and Gazebo for simulation. Generated robot paths and trajectories
+              from a scanned image and executed the resulting motion on the manipulator.
+            </p>
+            <div class="tags">
+              <span>Universal Robots</span><span>ROS</span><span>Python</span><span>RViz</span><span>Gazebo</span>
+            </div>
+          </article>
+
+          <article class="compact-project">
+            <img
+              class="compact-project-photo actuator-project-photo"
+              src="assets/images/cycloidal-actuator-1200.webp?v=20261008k"
+              alt="27:1 cycloidal robot actuator with integrated stepper motor and 12.7 Nm output torque"
+              loading="lazy"
+            >
+            <div class="project-meta">Robot actuator · Mechanical development</div>
+            <h3>27:1 cycloidal robot actuator</h3>
+            <p>
+              Designed and built a compact robotic joint actuator integrating a 27:1 cycloidal
+              reduction stage, stepper motor, output hub and custom housing. The reduction provides
+              approximately 12.7 Nm of output torque in a compact coaxial form factor.
+            </p>
+            <div class="tags">
+              <span>Cycloidal drive</span><span>27:1 reduction</span><span>12.7 Nm output</span><span>CAD</span><span>Prototyping</span>
+            </div>
+          </article>
+
+          <article class="compact-project">
+            <img
+              class="compact-project-photo fume-project-photo"
+              src="assets/images/fume-extractor-composite.webp?v=20261008d"
+              alt="Portable soldering fume extractor shown from both the fan side and the filter side"
+              loading="lazy"
+            >
+            <div class="project-meta">Product design · Workshop equipment</div>
+            <h3>Portable soldering fume extractor</h3>
+            <p>
+              Designed a compact portable fume extractor combining activated-carbon and HEPA
+              filtration to capture soldering fumes and airborne particles close to the work area.
+            </p>
+            <div class="tags">
+              <span>Product design</span><span>Prototyping</span><span>HEPA</span><span>Activated carbon</span>
             </div>
           </article>
         </div>
       </section>
-
-      <article class="project">
-        <div class="project-media">
-          <div class="media-placeholder">
-            <span>VIDEO</span>
-            <p>Add <code>assets/videos/matlab-ppo-rotor-control.mp4</code></p>
-          </div>
-          <video muted loop playsinline controls preload="metadata">
-            <source src="assets/videos/matlab-ppo-rotor-control.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-copy">
-          <div class="project-meta">Personal project · MATLAB / Simulink</div>
-          <h3>PPO-based individual rotor control</h3>
-          <p>
-            Developed a reinforcement-learning controller in MATLAB and Simulink where a PPO
-            policy directly commanded the four rotor inputs independently. Instead of relying on
-            a conventional rotor mixer, the network learned coordinated actuation from simulated
-            state feedback and explored end-to-end control of the quadrotor subsystem.
-          </p>
-          <ul>
-            <li>Four continuous control outputs, one for each rotor</li>
-            <li>PPO agent developed with MATLAB Reinforcement Learning Toolbox</li>
-            <li>Training performed against the simulated hybrid-robot dynamics in Simulink</li>
-            <li>Reward shaping based on tracking performance, energy use and episode time</li>
-            <li>Simulation-based study; physical validation remains future work</li>
-          </ul>
-          <div class="tags">
-            <span>MATLAB</span><span>Simulink</span><span>Reinforcement learning</span><span>PPO</span><span>Continuous control</span><span>Quadrotor</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <div class="media-placeholder">
-            <span>VIDEO</span>
-            <p>Add <code>assets/videos/rl-path-planning.mp4</code></p>
-          </div>
-          <video muted loop playsinline controls preload="metadata">
-            <source src="assets/videos/rl-path-planning.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-copy">
-          <div class="project-meta">Research Assistant · Ongoing</div>
-          <h3>Reinforcement learning & path planning</h3>
-          <p>
-            Developing PPO-based policies for coordinated rotor and DC-motor control in a
-            simulated hybrid robotic platform.
-          </p>
-          <ul>
-            <li>Rewards based on path deviation, energy use and traversal time</li>
-            <li>NVIDIA Isaac Lab / Isaac Sim simulation workflow with PyTorch</li>
-            <li>LiDAR SLAM, vision integration and physical validation planned</li>
-          </ul>
-          <div class="tags">
-            <span>Isaac Lab</span><span>PyTorch</span><span>PPO</span><span>Path planning</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="project">
-        <div class="project-media">
-          <div class="media-placeholder">
-            <span>VIDEO</span>
-            <p>Add <code>assets/videos/bldc-imu-rig.mp4</code></p>
-          </div>
-          <video muted loop playsinline controls preload="metadata">
-            <source src="assets/videos/bldc-imu-rig.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="project-copy">
-          <div class="project-meta">Physical control project</div>
-          <h3>IMU feedback control of a BLDC test rig</h3>
-          <p>
-            Built a closed-loop angle-control system on a physical BLDC test rig using an ESP32,
-            IMU feedback, Kalman-filtered angle estimation and PID control. The controller supports
-            multiple angle setpoints and continuously adjusts motor output based on the measured
-            angular error.
-          </p>
-          <ul>
-            <li>Closed feedback loop using IMU-based angle measurements</li>
-            <li>ESP32-based controller with ESC commands sent using the DShot protocol</li>
-            <li>Kalman filtering for angle estimation and noise reduction</li>
-            <li>Tracking tests across multiple commanded angle setpoints</li>
-          </ul>
-          <div class="tags">
-            <span>ESP32</span><span>BLDC</span><span>IMU</span><span>Kalman filter</span><span>PID</span><span>DShot</span>
-          </div>
-        </div>
-      </article>
-
-      <div class="compact-grid">
-        <article class="compact-project">
-          <img
-            class="compact-project-photo robot-project-photo"
-            src="assets/images/industrial-robot-project.webp?v=20261008d"
-            alt="Universal Robots manipulator executing a drawing trajectory during robotics coursework"
-            loading="lazy"
-          >
-          <div class="project-meta">Robotics coursework</div>
-          <h3>Industrial robot programming</h3>
-          <p>
-            Programmed a Universal Robots manipulator in ROS using Python, with RViz for
-            visualization and Gazebo for simulation. Generated robot paths and trajectories from
-            a scanned image and executed the resulting motion on the manipulator.
-          </p>
-          <div class="tags">
-            <span>Universal Robots</span><span>ROS</span><span>Python</span><span>RViz</span><span>Gazebo</span><span>Trajectory generation</span>
-          </div>
-        </article>
-
-        <article class="compact-project">
-          <img
-            class="compact-project-photo actuator-project-photo"
-            src="assets/images/cycloidal-actuator-1200.webp?v=20261008k"
-            alt="27:1 cycloidal robot actuator with integrated stepper motor and 12.7 Nm output torque"
-            loading="lazy"
-          >
-          <div class="project-meta">Robot actuator · Mechanical development</div>
-          <h3>27:1 cycloidal robot actuator</h3>
-          <p>
-            Designed and built a compact robotic joint actuator around a 27:1 cycloidal reduction
-            stage, integrating the stepper motor, gearbox, output hub and custom housing into a
-            single assembly. The reduction provides approximately 12.7 Nm of output torque while
-            retaining a compact coaxial form factor suited to robotic-arm joints. The project
-            covered CAD design, mechanical integration, fabrication, assembly and iterative
-            prototyping of the complete actuator.
-          </p>
-          <div class="tags">
-            <span>Robot actuator</span><span>Cycloidal drive</span><span>27:1 reduction</span><span>12.7 Nm output</span><span>Stepper motor</span><span>CAD</span><span>Prototyping</span>
-          </div>
-        </article>
-
-        <article class="compact-project">
-          <img
-            class="compact-project-photo fume-project-photo"
-            src="assets/images/fume-extractor-composite.webp?v=20261008d"
-            alt="Portable soldering fume extractor shown from both the fan side and the filter side"
-            loading="lazy"
-          >
-          <div class="project-meta">Product design · Workshop equipment</div>
-          <h3>Portable soldering fume extractor</h3>
-          <p>
-            Designed a compact, portable fume extractor for soldering work. The filtration system
-            combines activated-carbon and HEPA filtration to capture soldering fumes and airborne
-            particles close to the work area.
-          </p>
-          <div class="tags">
-            <span>Product design</span><span>Prototyping</span><span>Air filtration</span><span>HEPA</span><span>Activated carbon</span>
-          </div>
-        </article>
-      </div>
     </section>
 
     <section id="about" class="about shell">
