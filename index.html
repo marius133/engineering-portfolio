@@ -230,6 +230,38 @@
         <div class="project-media">
           <div class="media-placeholder">
             <span>VIDEO</span>
+            <p>Add <code>assets/videos/matlab-ppo-rotor-control.mp4</code></p>
+          </div>
+          <video muted loop playsinline controls preload="metadata">
+            <source src="assets/videos/matlab-ppo-rotor-control.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-copy">
+          <div class="project-meta">Personal project · MATLAB / Simulink</div>
+          <h3>PPO-based individual rotor control</h3>
+          <p>
+            Developed a reinforcement-learning controller in MATLAB and Simulink where a PPO
+            policy directly commanded the four rotor inputs independently. Instead of relying on
+            a conventional rotor mixer, the network learned coordinated actuation from simulated
+            state feedback and explored end-to-end control of the quadrotor subsystem.
+          </p>
+          <ul>
+            <li>Four continuous control outputs, one for each rotor</li>
+            <li>PPO agent developed with MATLAB Reinforcement Learning Toolbox</li>
+            <li>Training performed against the simulated hybrid-robot dynamics in Simulink</li>
+            <li>Reward shaping based on tracking performance, energy use and episode time</li>
+            <li>Simulation-based study; physical validation remains future work</li>
+          </ul>
+          <div class="tags">
+            <span>MATLAB</span><span>Simulink</span><span>Reinforcement learning</span><span>PPO</span><span>Continuous control</span><span>Quadrotor</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-media">
+          <div class="media-placeholder">
+            <span>VIDEO</span>
             <p>Add <code>assets/videos/rl-path-planning.mp4</code></p>
           </div>
           <video muted loop playsinline controls preload="metadata">
