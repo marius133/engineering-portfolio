@@ -399,6 +399,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 18px;
+  align-items: start;
   margin-top: 26px;
 }
 
@@ -416,6 +417,7 @@ h1 {
   float: none;
   width: 100%;
   max-width: none;
+  aspect-ratio: 4 / 3;
   height: auto;
   margin: 0 0 22px;
   border: 1px solid var(--line);
@@ -424,7 +426,7 @@ h1 {
 }
 
 .robot-project-photo {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
