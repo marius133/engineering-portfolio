@@ -272,6 +272,88 @@ h1 {
   font-size: .78rem;
 }
 
+.research-contribution {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 34px;
+  align-items: stretch;
+  margin: 4px 0 42px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(145deg, rgba(20,28,38,.96), rgba(13,18,25,.92));
+}
+
+.characterization-media {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #0c1219;
+}
+
+.characterization-media img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.characterization-media.has-image img { display: block; }
+.characterization-media.has-image .characterization-placeholder { display: none; }
+
+.characterization-placeholder {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 24px;
+  background:
+    linear-gradient(rgba(105,184,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(105,184,255,.08) 1px, transparent 1px),
+    #0c1219;
+  background-size: 28px 28px;
+  color: var(--muted);
+}
+
+.characterization-placeholder span {
+  color: var(--accent-2);
+  font: 700 1.05rem/1 "Space Grotesk", sans-serif;
+  letter-spacing: .12em;
+}
+
+.characterization-placeholder p {
+  margin: 12px 0 0;
+  font-size: .83rem;
+}
+
+.characterization-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.characterization-copy h3 {
+  margin: 0 0 14px;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.05;
+}
+
+.characterization-copy > p {
+  margin-top: 0;
+  color: #b7c4d0;
+}
+
+.characterization-copy ul {
+  margin: 14px 0 22px;
+  padding-left: 20px;
+  color: #cbd5df;
+}
+
+.characterization-copy li { margin: 6px 0; }
+
 .control-studies {
   margin: 4px 0 42px;
   padding: 34px;
@@ -489,9 +571,11 @@ footer a:hover { color: var(--text); }
   }
 
   .project:nth-of-type(odd) .project-media { order: initial; }
+  .research-contribution,
   .control-studies-heading,
   .study-grid,
   .wide-study-card { grid-template-columns: 1fr; }
+  .characterization-media { min-height: 260px; }
   .control-studies-heading { gap: 16px; }
   .wide-study-media {
     border-right: 0;
