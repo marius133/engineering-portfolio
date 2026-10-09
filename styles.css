@@ -157,6 +157,41 @@ h1 {
 
 .hero-card p { color: var(--muted); }
 
+.grant-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 16px;
+  padding: 7px 10px;
+  border: 1px solid rgba(105,184,255,.32);
+  border-radius: 999px;
+  background: rgba(105,184,255,.08);
+  color: var(--accent-2);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.research-context {
+  margin: 0 0 18px;
+  padding: 18px 20px;
+  border: 1px solid rgba(105,184,255,.22);
+  border-radius: 12px;
+  background: rgba(105,184,255,.045);
+}
+
+.research-context .grant-badge {
+  margin-top: 0;
+}
+
+.research-context p {
+  margin: 12px 0 0;
+  max-width: 900px;
+  color: #b7c4d0;
+  font-size: .92rem;
+}
+
 .projects { padding: 95px 0; }
 
 .section-heading {
