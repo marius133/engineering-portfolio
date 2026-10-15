@@ -3,54 +3,61 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Marius Halaas — Mechatronics MSc student and Research Assistant. Robotics, control systems, simulation and reinforcement learning." />
-  <title>Marius Halaas | Robotics & Control</title>
+  <meta name="description" content="Engineering portfolio of Marius Halaas, Mechatronics MSc student and Research Assistant at the University of Agder. Mechanical design, structural analysis, simulation, control and robotics." />
+  <title>Marius Halaas | Engineering Portfolio</title>
+  <meta name="theme-color" content="#f5f4f0" />
+  <link rel="canonical" href="https://mariushalaas.no/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261015-engineering" />
 </head>
 <body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="#top">MH</a>
+      <a class="brand" href="#top" aria-label="Marius Halaas — back to top">MH<span>Engineering portfolio</span></a>
       <nav aria-label="Main navigation">
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="mailto:halaasmarius@gmail.com">Contact <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero shell">
+    <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">MECHATRONICS · ROBOTICS · CONTROL</p>
-        <h1>Marius Halaas</h1>
+        <p class="eyebrow">MECHANICAL DESIGN · MECHATRONICS · CONTROL</p>
+        <h1 id="hero-title">Marius Halaas</h1>
+        <p class="hero-specialism">From mechanical design<br>to integrated systems.</p>
         <p class="hero-lead">
-          MSc student and Research Assistant at the University of Agder,
-          working with robotics, control systems, simulation and reinforcement learning.
+          Mechatronics MSc student and Research Assistant at the University of Agder.
+          I work across CAD, structural analysis, physical prototyping, simulation and control.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#projects">View projects</a>
+          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="#about">About & contact</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="status-row">
-          <span class="status-dot"></span>
-          <span>Current research</span>
+      <a class="hero-feature" href="#cycloidal-actuator" aria-label="Explore the 27:1 cycloidal actuator project">
+        <div class="hero-feature-top"><span>DESIGN & BUILD</span><span>01 / Selected work</span></div>
+        <img src="assets/images/cycloidal-actuator-1200.webp?v=20261008k"
+          alt="Physical cycloidal actuator with a custom housing, integrated stepper motor and output hub"
+          width="1200" height="900" fetchpriority="high">
+        <div class="hero-feature-caption">
+          <div><span>Mechanical development</span><h2>27:1 cycloidal actuator</h2></div>
+          <span class="feature-arrow" aria-hidden="true">↗</span>
         </div>
-        <div class="grant-badge">Grant-funded research · University of Agder</div>
-        <h2>Reinforcement learning & path planning</h2>
-        <p>
-          Developing PPO-based control for coordinated rotor and DC-motor actuation,
-          with the long-term goal of a physically validated digital twin.
-        </p>
-        <div class="tags">
-          <span>Isaac Lab</span><span>PyTorch</span><span>PPO</span><span>Robotics</span>
-        </div>
-      </div>
+      </a>
     </section>
+
+    <nav class="focus-grid shell" aria-label="Explore engineering disciplines">
+      <a href="#mechanical-design"><span class="focus-number">01</span><div><h2>Mechanical design & analysis</h2><p>CAD, FEA, mechanisms and physical prototypes</p></div><span aria-hidden="true">↘</span></a>
+      <a href="#modelling-control"><span class="focus-number">02</span><div><h2>Modelling & control</h2><p>Dynamic simulation, PID and learning-based control</p></div><span aria-hidden="true">↘</span></a>
+      <a href="#experimental-testing"><span class="focus-number">03</span><div><h2>Hardware & testing</h2><p>Embedded systems, measurements and model refinement</p></div><span aria-hidden="true">↘</span></a>
+    </nav>
 
     <section id="projects" class="projects shell">
       <div class="section-heading">
@@ -60,6 +67,7 @@
           Projects spanning physical prototyping, structural analysis, dynamic modelling,
           classical control and learning-based robotics.
         </p>
+        <a class="text-link" href="#additional-projects">Jump to actuator, product design & other projects <span aria-hidden="true">↓</span></a>
       </div>
 
       <section class="project-family" aria-labelledby="hybrid-family-title">
@@ -70,7 +78,7 @@
           </div>
           <p>
             One platform developed across several stages: physical design and prototyping,
-            simulation and control, experimental characterization, and learning-based autonomy.
+            simulation and control, learning-based autonomy, and experimental characterisation.
           </p>
         </header>
 
@@ -78,26 +86,26 @@
           <span class="grant-badge">Grant-funded research continuation · University of Agder</span>
           <p>
             The platform originated as a two-person bachelor project and was subsequently continued
-            through grant-funded research spanning integrated modelling, experimental characterization
+            through grant-funded research spanning integrated modelling, experimental characterisation
             and learning-based autonomy.
           </p>
         </div>
 
-        <div class="family-flow" aria-label="Project development stages">
-          <span>01 Physical platform</span>
-          <span>02 Modelling & control</span>
-          <span>03 Characterization</span>
-          <span>04 Learning & autonomy</span>
-        </div>
+        <nav class="family-flow" aria-label="Hybrid platform project sections">
+          <a href="#mechanical-design"><span>01</span> Mechanical design</a>
+          <a href="#modelling-control"><span>02</span> Modelling & control</a>
+          <a href="#learning-autonomy"><span>03</span> Learning & autonomy</a>
+          <a href="#experimental-testing"><span>04</span> Experimental testing</a>
+        </nav>
 
-        <section class="project-stage" aria-labelledby="stage-physical-title">
+        <section id="mechanical-design" class="project-stage" aria-labelledby="stage-physical-title">
           <header class="stage-header">
             <span class="stage-number">01</span>
             <div>
               <div class="project-meta">Bachelor project · Physical prototype · 2026</div>
               <h3 id="stage-physical-title">Physical platform & mechanical development</h3>
               <p>
-                Designed, built and programmed a hybrid robot prototype combining
+                As part of a two-person bachelor project, designed, built and programmed a hybrid prototype combining
                 differential-drive ground locomotion with quadrotor propulsion in one platform.
               </p>
             </div>
@@ -105,10 +113,6 @@
 
           <div class="stage-layout">
             <div class="project-media">
-              <div class="media-placeholder">
-                <span>VIDEO</span>
-                <p>Add <code>assets/videos/hybrid-robot.mp4</code></p>
-              </div>
               <video muted loop playsinline controls preload="metadata">
                 <source src="assets/videos/hybrid-robot.mp4" type="video/mp4">
               </video>
@@ -136,28 +140,24 @@
             <div class="subsection-heading">
               <div>
                 <p class="eyebrow">MECHANICAL ANALYSIS</p>
-                <h4>Structural analysis & design optimization</h4>
+                <h4>Structural analysis & design optimisation</h4>
               </div>
               <p>
-                Space for the engineering analysis behind the physical design, rather than
-                presenting the prototype only as a finished build.
+                Structural, modal, topology and contact analyses were used to assess stiffness,
+                vibration behaviour, material distribution and load transfer in the prototype.
               </p>
             </div>
 
             <div class="technical-gallery">
               <figure class="technical-card">
-                <div class="technical-media has-image">
-                  <div class="image-placeholder">
-                    <span>IMAGE</span>
-                    <p>Add <code>assets/images/bachelor-fea-analysis.jpg</code></p>
-                  </div>
+                <button class="technical-media has-image image-open" type="button" data-image-viewer aria-haspopup="dialog" aria-label="Enlarge Structural FEA">
                   <img
                     src="assets/images/bachelor-fea-analysis.jpg?v=20261008n"
                     alt="Finite element analysis of the hybrid robot structure"
                     loading="lazy"
-                    onload="this.parentElement.classList.add('has-image')"
                   >
-                </div>
+                  <span class="zoom-hint" aria-hidden="true">View full size ↗</span>
+                </button>
                 <figcaption>
                   <h5>Structural FEA</h5>
                   <p>
@@ -169,18 +169,13 @@
 
               <figure class="technical-card">
                 <div class="technical-media modal-media">
-                  <div class="image-placeholder">
-                    <span>VIDEO</span>
-                    <p>Add <code>assets/videos/bachelor-modal-analysis.mp4</code></p>
-                  </div>
                   <video
                     muted
-                    autoplay
                     loop
                     playsinline
+                    controls
                     preload="metadata"
                     aria-label="Animated modal analysis of the hybrid robot structure"
-                    onloadeddata="this.parentElement.classList.add('has-video')"
                   >
                     <source src="assets/videos/bachelor-modal-analysis.mp4" type="video/mp4">
                   </video>
@@ -195,20 +190,16 @@
               </figure>
 
               <figure class="technical-card">
-                <div class="technical-media topology-media has-image">
-                  <div class="image-placeholder">
-                    <span>IMAGE</span>
-                    <p>Add <code>assets/images/bachelor-topology-optimization.png</code></p>
-                  </div>
+                <button class="technical-media topology-media has-image image-open" type="button" data-image-viewer aria-haspopup="dialog" aria-label="Enlarge Topology optimisation">
                   <img
                     src="assets/images/bachelor-topology-optimization.png?v=20261008n"
-                    alt="Topology optimization study for the hybrid robot"
+                    alt="Topology optimisation study for the hybrid robot"
                     loading="lazy"
-                    onload="this.parentElement.classList.add('has-image')"
                   >
-                </div>
+                  <span class="zoom-hint" aria-hidden="true">View full size ↗</span>
+                </button>
                 <figcaption>
-                  <h5>Topology optimization</h5>
+                  <h5>Topology optimisation</h5>
                   <p>
                     Explored material distribution and stiffness-to-weight trade-offs to guide
                     lighter mechanical geometry without losing required structural performance.
@@ -217,18 +208,14 @@
               </figure>
 
               <figure class="technical-card">
-                <div class="technical-media has-image">
-                  <div class="image-placeholder">
-                    <span>IMAGE</span>
-                    <p>Add <code>assets/images/bachelor-contact-analysis.png</code></p>
-                  </div>
+                <button class="technical-media has-image image-open" type="button" data-image-viewer aria-haspopup="dialog" aria-label="Enlarge Contact analysis">
                   <img
                     src="assets/images/bachelor-contact-analysis.png?v=20261008n"
                     alt="Contact analysis of the carbon-fibre sandwich structure in the hybrid robot"
                     loading="lazy"
-                    onload="this.parentElement.classList.add('has-image')"
                   >
-                </div>
+                  <span class="zoom-hint" aria-hidden="true">View full size ↗</span>
+                </button>
                 <figcaption>
                   <h5>Contact analysis</h5>
                   <p>
@@ -242,7 +229,7 @@
           </div>
         </section>
 
-        <section class="project-stage" aria-labelledby="stage-model-title">
+        <section id="modelling-control" class="project-stage" aria-labelledby="stage-model-title">
           <header class="stage-header">
             <span class="stage-number">02</span>
             <div>
@@ -257,10 +244,6 @@
 
           <div class="stage-layout">
             <div class="project-media">
-              <div class="media-placeholder">
-                <span>VIDEO</span>
-                <p>Add <code>assets/videos/simscape-model.mp4</code></p>
-              </div>
               <video muted loop playsinline controls preload="metadata">
                 <source src="assets/videos/simscape-model.mp4" type="video/mp4">
               </video>
@@ -286,18 +269,14 @@
                 <h4>Hybrid mobility and flight-control studies</h4>
               </div>
               <p>
-                Focused studies developed on top of the integrated model, grouped here as part
-                of the same modelling and control project.
+                Simulation studies exploring how rotor thrust can assist ground mobility
+                and how closed-loop control can regulate vertical motion.
               </p>
             </div>
 
             <div class="study-grid">
               <article class="study-card">
                 <div class="project-media study-media">
-                  <div class="media-placeholder">
-                    <span>VIDEO</span>
-                    <p>Add <code>assets/videos/thrust-assisted-turning.mp4?v=20261008</code></p>
-                  </div>
                   <video muted loop playsinline controls preload="metadata">
                     <source src="assets/videos/thrust-assisted-turning.mp4?v=20261008" type="video/mp4">
                   </video>
@@ -307,17 +286,14 @@
                   <h4>Thrust-assisted turning</h4>
                   <p>
                     Upward rotor thrust partially unloads the wheels and reduces lateral
-                    scrub forces. The approach reduced turning radius by 78.17% in the evaluated case.
+                    scrub forces. In simulation, rotor assistance reduced turning radius by 78.2%
+                    compared with unassisted driving in the evaluated case.
                   </p>
                 </div>
               </article>
 
               <article class="study-card">
                 <div class="project-media study-media">
-                  <div class="media-placeholder">
-                    <span>VIDEO</span>
-                    <p>Add <code>assets/videos/slope-control.mp4</code></p>
-                  </div>
                   <video muted loop playsinline controls preload="metadata">
                     <source src="assets/videos/slope-control.mp4" type="video/mp4">
                   </video>
@@ -334,10 +310,6 @@
 
               <article class="study-card">
                 <div class="project-media study-media">
-                  <div class="media-placeholder">
-                    <span>VIDEO</span>
-                    <p>Add <code>assets/videos/height-assist-control.mp4</code></p>
-                  </div>
                   <video muted loop playsinline controls preload="metadata">
                     <source src="assets/videos/height-assist-control.mp4" type="video/mp4">
                   </video>
@@ -357,7 +329,7 @@
 
         
 
-        <section class="project-stage" aria-labelledby="stage-learning-title">
+        <section id="learning-autonomy" class="project-stage" aria-labelledby="stage-learning-title">
           <header class="stage-header">
             <span class="stage-number">03</span>
             <div>
@@ -376,7 +348,9 @@
                 <button
                   class="rl-plot-media rl-plot-open"
                   type="button"
-                  data-dialog-target="rl-plot-dialog"
+                  data-image-viewer
+                  aria-haspopup="dialog"
+                  data-caption="PPO-controlled individual rotor thrust during path tracking. Colour indicates the thrust command for each rotor; the dashed line is the reference path."
                   aria-label="Open PPO rotor-thrust plot in fullscreen"
                 >
                   <img
@@ -406,33 +380,34 @@
                 </p>
                 <ul>
                   <li>Four continuous actions, one per rotor</li>
-                  <li>MATLAB Reinforcement Learning Toolbox</li>
+                  <li>MATLAB / Simulink and PyTorch</li>
                   <li>Reward shaping for tracking, energy use and episode time</li>
                 </ul>
 
                 <div class="rl-results">
-                  <div class="rl-result-metrics" aria-label="PPO evaluation summary">
-                    <div><strong>4 / 4</strong><span>Successful cases</span></div>
+                  <div class="rl-result-metrics" aria-label="PPO simulation evaluation summary">
+                    <div><strong>4 / 4</strong><span>Successful simulation cases</span></div>
                     <div><strong>46.1 s</strong><span>Completion time</span></div>
                     <div><strong>6.96 kJ</strong><span>Energy use</span></div>
                   </div>
 
                   <p class="rl-result-callout">
-                    The learned controller reduced completion time by <strong>7.1%</strong> compared
-                    with the zero-thrust/rule baseline (49.6 s), while consuming less energy than
-                    every fixed-thrust strategy. It also slightly outperformed fixed20 in time
-                    (46.1 vs 46.2 s) while using <strong>4.1% less energy</strong>.
+                    In the simulation comparison, PPO used <strong>4.1% less energy</strong> than
+                    fixed 20% thrust, with nearly the same completion time (46.1 vs 46.2 s).
+                    It completed the task 7.1% faster than zero thrust, but used more energy
+                    (6.96 kJ vs 498 J). Higher fixed-thrust settings were faster and consumed more energy.
                   </p>
 
                   <details class="rl-results-details">
                     <summary>View full controller comparison</summary>
                     <div class="rl-results-table-wrap">
                       <table class="rl-results-table">
+                        <caption>Simulation results · energy and completion time</caption>
                         <thead>
                           <tr>
-                            <th>Method</th>
-                            <th>Energy</th>
-                            <th>Time</th>
+                            <th scope="col">Method</th>
+                            <th scope="col">Energy</th>
+                            <th scope="col">Time</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -468,17 +443,13 @@
                 </div>
 
                 <div class="tags">
-                  <span>MATLAB</span><span>Simulink</span><span>PPO</span><span>Continuous control</span>
+                  <span>MATLAB</span><span>Simulink</span><span>PyTorch</span><span>PPO</span><span>Continuous control</span>
                 </div>
               </div>
             </article>
 
             <article class="learning-card">
               <div class="project-media learning-media">
-                <div class="media-placeholder">
-                  <span>VIDEO</span>
-                  <p>Add <code>assets/videos/rl-path-planning.mp4</code></p>
-                </div>
                 <video muted loop playsinline controls preload="metadata">
                   <source src="assets/videos/rl-path-planning.mp4" type="video/mp4">
                 </video>
@@ -488,7 +459,8 @@
                 <h4>Reinforcement learning & path planning</h4>
                 <p>
                   Developing PPO-based policies for coordinated rotor and DC-motor control in
-                  NVIDIA Isaac Lab / Isaac Sim, with LiDAR SLAM, vision and physical validation planned.
+                  NVIDIA Isaac Lab / Isaac Sim. LiDAR SLAM integration is in progress;
+                  vision integration and physical validation are planned.
                 </p>
                 <ul>
                   <li>Rewards based on path deviation, energy use and traversal time</li>
@@ -503,14 +475,14 @@
           </div>
         </section>
 
-        <section class="project-stage" aria-labelledby="stage-characterization-title">
+        <section id="experimental-testing" class="project-stage" aria-labelledby="stage-characterization-title">
           <header class="stage-header">
             <span class="stage-number">04</span>
             <div>
-              <div class="project-meta">Grant-funded research · Experimental characterization · University of Agder</div>
-              <h3 id="stage-characterization-title">Experimental characterization & parameter identification</h3>
+              <div class="project-meta">Grant-funded research · Experimental characterisation · University of Agder</div>
+              <h3 id="stage-characterization-title">Experimental characterisation & parameter identification</h3>
               <p>
-                Contributed substantially to characterization of the physical robot through
+                Contributed substantially to characterisation of the physical robot through
                 experimental setup, measurement, data analysis and model refinement.
               </p>
             </div>
@@ -518,21 +490,17 @@
 
           <div class="stage-layout characterization-layout">
             <div class="characterization-media has-image">
-              <div class="characterization-placeholder">
-                <span>IMAGE</span>
-                <p>Add <code>assets/images/thrust-measurement-rig.jpg</code></p>
-              </div>
               <img
                 src="assets/images/thrust-measurement-rig.jpg?v=20261015"
-                alt="Rotor thrust measurement rig used for experimental characterization of the hybrid robot"
+                alt="Rotor thrust measurement rig used for experimental characterisation of the hybrid robot"
                 loading="lazy"
               >
             </div>
 
             <div class="stage-copy">
               <ul>
-                <li>Supported development and setup of physical characterization experiments</li>
-                <li>Performed rotor-thrust measurements for propulsion characterization</li>
+                <li>Supported development and setup of physical characterisation experiments</li>
+                <li>Performed rotor-thrust measurements for propulsion characterisation</li>
                 <li>Processed experimental data and contributed to parameter estimation</li>
                 <li>Used measured results to support refinement of the MATLAB/Simscape model</li>
               </ul>
@@ -544,7 +512,7 @@
         </section>
       </section>
 
-      <section class="other-projects" aria-labelledby="other-projects-title">
+      <section id="additional-projects" class="other-projects" aria-labelledby="other-projects-title">
         <header class="other-projects-heading">
           <p class="eyebrow">OTHER ENGINEERING WORK</p>
           <h2 id="other-projects-title">Additional projects</h2>
@@ -554,12 +522,66 @@
           </p>
         </header>
 
-        <article class="standalone-project">
-          <div class="project-media">
-            <div class="media-placeholder">
-              <span>VIDEO</span>
-              <p>Add <code>assets/videos/bldc-imu-rig.mp4</code></p>
+        <div class="compact-grid">
+          <article class="compact-project" id="cycloidal-actuator">
+            <img
+              class="compact-project-photo actuator-project-photo"
+              src="assets/images/cycloidal-actuator-1200.webp?v=20261008k"
+              alt="27:1 cycloidal actuator with an integrated stepper motor, output hub and custom housing"
+              loading="lazy"
+            >
+            <div class="project-meta">Mechanical design · Built prototype</div>
+            <h3>27:1 cycloidal actuator</h3>
+            <p>
+              Designed and built a compact robotic joint actuator integrating a 27:1 cycloidal
+              reduction stage, stepper motor, output hub and custom housing. The calculated theoretical
+              output torque is approximately 12.7 N·m.
+            </p>
+            <div class="tags">
+              <span>Cycloidal drive</span><span>27:1 reduction</span><span>12.7 N·m theoretical</span><span>CAD</span><span>Prototyping</span>
             </div>
+          </article>
+
+          <article class="compact-project" id="fume-extractor">
+            <img
+              class="compact-project-photo fume-project-photo"
+              src="assets/images/fume-extractor-composite.webp?v=20261008d"
+              alt="Portable soldering fume extractor shown from both the fan side and the filter side"
+              loading="lazy"
+            >
+            <div class="project-meta">Product design · Workshop equipment</div>
+            <h3>Portable soldering fume extractor</h3>
+            <p>
+              Designed a compact portable fume extractor combining activated-carbon and HEPA
+              filtration to capture soldering fumes and airborne particles close to the work area.
+            </p>
+            <div class="tags">
+              <span>Product design</span><span>Prototyping</span><span>HEPA</span><span>Activated carbon</span>
+            </div>
+          </article>
+
+          <article class="compact-project" id="industrial-robotics">
+            <img
+              class="compact-project-photo robot-project-photo"
+              src="assets/images/industrial-robot-project.webp?v=20261008d"
+              alt="Universal Robots manipulator executing a drawing trajectory during robotics coursework"
+              loading="lazy"
+            >
+            <div class="project-meta">Robotics coursework</div>
+            <h3>Industrial robot programming</h3>
+            <p>
+              Programmed a Universal Robots manipulator in ROS using Python, with RViz for
+              visualisation and Gazebo for simulation. Generated robot paths and trajectories
+              from a scanned image and executed the resulting motion on the manipulator.
+            </p>
+            <div class="tags">
+              <span>Universal Robots</span><span>ROS</span><span>Python</span><span>RViz</span><span>Gazebo</span>
+            </div>
+          </article>
+        </div>
+
+        <article class="standalone-project" id="bldc-control">
+          <div class="project-media">
             <video muted loop playsinline controls preload="metadata">
               <source src="assets/videos/bldc-imu-rig.mp4" type="video/mp4">
             </video>
@@ -583,63 +605,7 @@
           </div>
         </article>
 
-        <div class="compact-grid">
-          <article class="compact-project">
-            <img
-              class="compact-project-photo robot-project-photo"
-              src="assets/images/industrial-robot-project.webp?v=20261008d"
-              alt="Universal Robots manipulator executing a drawing trajectory during robotics coursework"
-              loading="lazy"
-            >
-            <div class="project-meta">Robotics coursework</div>
-            <h3>Industrial robot programming</h3>
-            <p>
-              Programmed a Universal Robots manipulator in ROS using Python, with RViz for
-              visualization and Gazebo for simulation. Generated robot paths and trajectories
-              from a scanned image and executed the resulting motion on the manipulator.
-            </p>
-            <div class="tags">
-              <span>Universal Robots</span><span>ROS</span><span>Python</span><span>RViz</span><span>Gazebo</span>
-            </div>
-          </article>
 
-          <article class="compact-project">
-            <img
-              class="compact-project-photo actuator-project-photo"
-              src="assets/images/cycloidal-actuator-1200.webp?v=20261008k"
-              alt="27:1 cycloidal robot actuator with integrated stepper motor and 12.7 Nm output torque"
-              loading="lazy"
-            >
-            <div class="project-meta">Robot actuator · Mechanical development</div>
-            <h3>27:1 cycloidal robot actuator</h3>
-            <p>
-              Designed and built a compact robotic joint actuator integrating a 27:1 cycloidal
-              reduction stage, stepper motor, output hub and custom housing. The reduction provides
-              approximately 12.7 Nm of output torque in a compact coaxial form factor.
-            </p>
-            <div class="tags">
-              <span>Cycloidal drive</span><span>27:1 reduction</span><span>12.7 Nm output</span><span>CAD</span><span>Prototyping</span>
-            </div>
-          </article>
-
-          <article class="compact-project">
-            <img
-              class="compact-project-photo fume-project-photo"
-              src="assets/images/fume-extractor-composite.webp?v=20261008d"
-              alt="Portable soldering fume extractor shown from both the fan side and the filter side"
-              loading="lazy"
-            >
-            <div class="project-meta">Product design · Workshop equipment</div>
-            <h3>Portable soldering fume extractor</h3>
-            <p>
-              Designed a compact portable fume extractor combining activated-carbon and HEPA
-              filtration to capture soldering fumes and airborne particles close to the work area.
-            </p>
-            <div class="tags">
-              <span>Product design</span><span>Prototyping</span><span>HEPA</span><span>Activated carbon</span>
-            </div>
-          </article>
-        </div>
       </section>
     </section>
 
@@ -650,14 +616,19 @@
       </div>
       <div class="about-copy">
         <p>
-          I am a Mechatronics MSc student at the University of Agder with a particular interest
-          in robotics and control systems. My work spans physical prototyping, embedded systems,
-          dynamic modelling, classical control and reinforcement learning.
+          I am a Mechatronics MSc student and Research Assistant at the University of Agder,
+          with interests in mechanical design, mechatronic systems and control. My projects span
+          CAD and structural analysis, physical prototyping, embedded systems and dynamic simulation.
         </p>
         <p>
           I enjoy projects where mechanical, electrical and software design have to work together
           as one system, and where simulation can be connected back to real hardware.
         </p>
+        <p>
+          My current grant-funded research explores coordinated rotor and wheel actuation
+          using reinforcement learning in NVIDIA Isaac Lab and PyTorch.
+        </p>
+        <a class="contact-link" href="mailto:halaasmarius@gmail.com">halaasmarius@gmail.com <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
@@ -665,26 +636,23 @@
   <footer>
     <div class="shell footer-inner">
       <span>© <span id="year"></span> Marius Halaas</span>
-      <span>Engineering portfolio</span>
+      <a href="#top">Back to top ↑</a>
     </div>
   </footer>
 
   
 
-  <dialog class="image-dialog" id="rl-plot-dialog" aria-label="Fullscreen PPO rotor-thrust plot">
-    <button class="image-dialog-close" type="button" aria-label="Close fullscreen image">×</button>
+  <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-dialog-title" aria-describedby="image-dialog-caption">
+    <div class="image-dialog-header">
+      <p id="image-dialog-title">Project image</p>
+      <button class="image-dialog-close" type="button" aria-label="Close full-size image" autofocus>×</button>
+    </div>
     <div class="image-dialog-content">
-      <img
-        src="assets/images/rl-individual-rotor-thrust.webp?v=20261008p"
-        alt="Fullscreen view of the four PPO-controlled rotor-thrust trajectory plots"
-      >
-      <p>
-        PPO-controlled individual rotor thrust during path tracking. Colour indicates the actual
-        thrust command for each rotor; the dashed line is the reference path.
-      </p>
+      <img data-viewer-image alt="">
+      <p id="image-dialog-caption"></p>
     </div>
   </dialog>
 
-  <script src="script.js?v=20261008q" defer></script>
+  <script src="script.js?v=20261015-engineering" defer></script>
 </body>
 </html>
