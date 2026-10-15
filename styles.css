@@ -1310,3 +1310,25 @@ footer a:hover { color: var(--text); }
     padding: 10px;
   }
 }
+
+
+.characterization-layout {
+  grid-template-columns: minmax(280px, 420px) 1fr;
+  align-items: center;
+}
+
+.characterization-layout .characterization-media {
+  width: 100%;
+  max-width: 420px;
+  min-height: 240px;
+}
+
+@media (max-width: 900px) {
+  .characterization-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .characterization-layout .characterization-media {
+    max-width: 520px;
+  }
+}
